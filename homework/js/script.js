@@ -16,12 +16,12 @@ function getEntry() {
 
 function displayEntries({ entryTitle, entryBody }) {
     const outer_div = document.createElement('div')
-    outer_div.classList.add("card", "text-bg-dark", "mb-3", "card_style")
+    outer_div.classList.add("card", "text-bg-secondary", "mb-3", "card_style")
     const mid_div = document.createElement('div')
-    mid_div.className = "card-header"
+    mid_div.classList.add("card-header", "cardHeaderContainer")
     mid_div.innerHTML = "To-do Entry"
     const close_button = document.createElement('button')
-    close_button.classList.add("btn-close", "text-right")
+    close_button.classList.add("btn-close", "closeButton")
     const inner_div = document.createElement('div')
     inner_div.className = "card-body"
     const h5 = document.createElement('h5')
